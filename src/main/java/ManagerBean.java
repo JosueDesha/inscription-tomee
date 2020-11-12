@@ -6,6 +6,7 @@ import javax.inject.Named;
 
 
 @Named("manager")
+@RequestScoped
 public class ManagerBean {
 
     private String version = "1.0-SNAPSHOT";
@@ -14,11 +15,11 @@ public class ManagerBean {
     public String getVersion() {
         return version;
     }
-    public int id;
-    public String lastName;
-    public String firstName;
-    public String birthDate;
-    public String phoneNumber;
+    //public int id;
+    //public String lastName;
+    //public String firstName;
+    //public String birthDate;
+    //public String phoneNumber;
 
     public ArrayList<student> getStudentList() 
     {
