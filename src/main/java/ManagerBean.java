@@ -28,5 +28,24 @@ public class ManagerBean {
                         new Student(2, "JHONSON", "Derick", "12/09/2000", "0696123456")));
 
         return studentList;
+    }public ArrayList<Formation> getFormationList() 
+    {
+        ArrayList<Formation> formationList = new ArrayList<Formation>(
+                Arrays.asList(new Formation(3,"lettre",2),
+                        new Formation(5,"batiment",1 )));
+
+        return formationList;
     }
+
+
+    public ArrayList<Promotion> getPromotionList() 
+    {
+        ArrayList<Promotion> promotionList = new ArrayList<Promotion>(
+                Arrays.asList(new Promotion(2013,0,3),
+                        new Promotion(2019,2,5)));
+
+        return promotionList;
+    }
+
 }
+
