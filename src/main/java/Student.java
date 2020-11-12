@@ -1,4 +1,4 @@
-public class student 
+public class Student 
     {
         
         public int id;
@@ -48,7 +48,7 @@ public class student
         }
     
         
-        public student(int id, String lastName, String firstName, String birthDate, String phoneNumber) {
+        public Student(int id, String lastName, String firstName, String birthDate, String phoneNumber) {
     
           this.id =id;
             this.lastName=lastName;

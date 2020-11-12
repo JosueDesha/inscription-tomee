@@ -21,11 +21,11 @@ public class ManagerBean {
     //public String birthDate;
     //public String phoneNumber;
 
-    public ArrayList<student> getStudentList() 
+    public ArrayList<Student> getStudentList() 
     {
-        ArrayList<student> studentList = new ArrayList<student>(
-                Arrays.asList(new student(1, "desha", "josue", "12/09/2003", "0696123456"),
-                        new student(2, "JHONSON", "Derick", "12/09/2000", "0696123456")));
+        ArrayList<Student> studentList = new ArrayList<Student>(
+                Arrays.asList(new Student(1, "desha", "josue", "12/09/2003", "0696123456"),
+                        new Student(2, "JHONSON", "Derick", "12/09/2000", "0696123456")));
 
         return studentList;
     }
