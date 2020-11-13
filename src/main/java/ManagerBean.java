@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
+import javax.annotation.PostConstruct;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Named;
 
@@ -46,6 +48,6 @@ public class ManagerBean {
 
         return promotionList;
     }
-
+    
 }
 
