@@ -1,6 +1,8 @@
+import javax.faces.annotation.ManagedProperty;
+
 public class Student 
     {
-        
+        @ManagedProperty(value="#{manager}")
         public int id;
         public String lastName;
         public String firstName;

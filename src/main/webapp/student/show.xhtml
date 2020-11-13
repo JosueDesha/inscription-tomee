@@ -24,7 +24,9 @@
         <!-- column header -->
         <f:facet name="header">Étudiant N°</f:facet>
         <!-- row record attribute -->
-        #{s.id}
+        <h:link value='#{s.id}' outcome='presentation'>
+            <f:param name='id' value='#{s.id}' />
+     </h:link>
     </h:column>
 
     <h:column>
