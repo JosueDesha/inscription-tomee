@@ -5,6 +5,13 @@ import javax.inject.Named;
 @Named("stud")
 @RequestScoped
 public class studbean {
+
+    private String version = "1.0-SNAPSHOT";
+   
+
+    public String getVersion() {
+        return version;
+    }
     @ManagedProperty(value = "#{manager.studentList}")
     private Student StudentList;
 

@@ -15,7 +15,8 @@
 </h:head>
 
 <h:body>
- <h1 value="#{stud.manager.studentList}" var="t"></h1>
-  l'etudiant dont l'id est #{t.id}
+ <h1 value="#{manager.studentList}" var="t"></h1>
+ l'etudiant <h:outputText value="#{request.getParameter('id')}" /> nommé:
+ <h:outputText value="#{request.getParameter('t.lastName')}" ></h:outputText>
 </h:body>
 </html>
