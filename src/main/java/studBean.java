@@ -4,7 +4,7 @@ import javax.inject.Named;
 
 @Named("stud")
 @RequestScoped
-public class studbean {
+public class studBean {
 
     private String version = "1.0-SNAPSHOT";
    
@@ -12,7 +12,7 @@ public class studbean {
     public String getVersion() {
         return version;
     }
-    @ManagedProperty(value = "#{manager.studentList}")
+    @ManagedProperty(value="#{manager}")
     private Student StudentList;
     private ManagerBean managerBean;
 

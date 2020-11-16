@@ -6,7 +6,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
          xmlns:f="http://java.sun.com/jsf/core"
          xmlns:h="http://java.sun.com/jsf/html"
-         xmlns:ui="http://java.sun.com/jsf/facelets">
+         xmlns:ui="http://java.sun.com/jsf/facelets"
+         xmlns:c="http://java.sun.com/jsp/jstl/core" version="2.1">
 
 <h:head>
 
@@ -15,8 +16,12 @@
 </h:head>
 
 <h:body>
- <h1 value="#{manager.studentList}" var="t"></h1>
- l'etudiant <h:outputText value="#{request.getParameter('id')}" /> nommé:
+   
+ l'etudiant 
+
+ <h:outputText value="#{request.getParameter('id')}" /> nommé:
  <h:outputText value="#{request.getParameter('lastName')}" ></h:outputText>
+ <c:set var="lastName" value="#{manager.studentList}" scope="request" />
+ 
 </h:body>
 </html>
