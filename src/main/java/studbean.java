@@ -14,6 +14,7 @@ public class studbean {
     }
     @ManagedProperty(value = "#{manager.studentList}")
     private Student StudentList;
+    private ManagerBean managerBean;
 
     public Student getStudentList()
     {
@@ -24,4 +25,13 @@ public class studbean {
     {
         this.StudentList = Studentlist;
     }
+    public void ManagerBean(ManagerBean ManagerBean) {
+        this.managerBean = ManagerBean;
+    }
+    public ManagerBean getManagerBean()
+        {
+            return managerBean;
+
+        }
+    
 }

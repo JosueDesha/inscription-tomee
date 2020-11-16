@@ -1,9 +1,12 @@
+import javax.annotation.PostConstruct;
 import javax.faces.annotation.ManagedProperty;
+import javax.inject.Inject;
 
 public class Student 
     {
         @ManagedProperty(value="#{manager}")
         public int id;
+        @Inject
         public String lastName;
         public String firstName;
         public String birthDate;
@@ -20,7 +23,7 @@ public class Student
         public String getLastName() {
             return this.lastName;
         }
-    
+        @PostConstruct
         public void setLastName(String lastName) {
             this.lastName = lastName;
         }
@@ -49,8 +52,7 @@ public class Student
             this.phoneNumber = phoneNumber;
         }
     
-        
-        public Student(int id, String lastName, String firstName, String birthDate, String phoneNumber) {
+         public Student(int id, String lastName, String firstName, String birthDate, String phoneNumber) {
     
           this.id =id;
             this.lastName=lastName;

@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.RequestScoped;
+import javax.inject.Inject;
 import javax.inject.Named;
 
 
@@ -22,9 +23,10 @@ public class ManagerBean {
     //public String firstName;
     //public String birthDate;
     //public String phoneNumber;
-
+@Inject
     public ArrayList<Student> getStudentList() 
     {
+    
         ArrayList<Student> studentList = new ArrayList<>(
                 Arrays.asList(new Student(1, "desha", "josue", "12/09/2003", "0696123456"),
                         new Student(2, "JHONSON", "Derick", "12/09/2000", "0696123456")));
