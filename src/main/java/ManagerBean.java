@@ -25,14 +25,14 @@ public class ManagerBean {
 
     public ArrayList<Student> getStudentList() 
     {
-        ArrayList<Student> studentList = new ArrayList<Student>(
+        ArrayList<Student> studentList = new ArrayList<>(
                 Arrays.asList(new Student(1, "desha", "josue", "12/09/2003", "0696123456"),
                         new Student(2, "JHONSON", "Derick", "12/09/2000", "0696123456")));
 
         return studentList;
     }public ArrayList<Formation> getFormationList() 
     {
-        ArrayList<Formation> formationList = new ArrayList<Formation>(
+        ArrayList<Formation> formationList = new ArrayList<>(
                 Arrays.asList(new Formation(3,"lettre",2),
                         new Formation(5,"batiment",1 )));
 
@@ -42,7 +42,7 @@ public class ManagerBean {
 
     public ArrayList<Promotion> getPromotionList() 
     {
-        ArrayList<Promotion> promotionList = new ArrayList<Promotion>(
+        ArrayList<Promotion> promotionList = new ArrayList<>(
                 Arrays.asList(new Promotion(2013,0,3),
                         new Promotion(2019,2,5)));
 
