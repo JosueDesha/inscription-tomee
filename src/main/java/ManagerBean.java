@@ -23,7 +23,7 @@ public class ManagerBean {
     //public String firstName;
     //public String birthDate;
     //public String phoneNumber;
-@Inject
+
     public ArrayList<Student> getStudentList() 
     {
     

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!DOCTYPE html
+
     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml"
@@ -11,17 +12,24 @@
 
 <h:head>
 
-    <title>presentation des  étudiants (stud v#{stud.version}  )</title>
+    <title>presentation des  étudiants (Manager v#{stud.version})</title>
 
 </h:head>
 
 <h:body>
-   
- l'etudiant 
+    <title> Détails de l'etudiant</title> 
+    <h:form>
+       
+        <h>l'Etudiant N°</h> #{stud.id}
+        <h>se nomme</h> #{stud.name}
+        <h>f</h> #{stud.surname}
+        <h>son numero est</h> #{stud.telephone}
 
- <h:outputText value="#{request.getParameter('id')}" /> nommé:
- <h:outputText value="#{request.getParameter('lastName')}" ></h:outputText>
- <c:set var="lastName" value="#{manager.studentList}" scope="request" />
+
+    </h:form>
+
  
+  
+           
 </h:body>
 </html>

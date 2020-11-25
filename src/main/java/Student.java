@@ -3,8 +3,9 @@ import javax.faces.annotation.ManagedProperty;
 import javax.inject.Inject;
 
 public class Student 
-    {@Inject
+    {
         @ManagedProperty(value="#{manager}")
+        @Inject
         public int id;
         
         public String lastName;
