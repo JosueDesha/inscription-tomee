@@ -1,4 +1,4 @@
-package toto;
+package josue;
 import java.util.ArrayList;
 import java.util.Arrays;
 import javax.enterprise.context.RequestScoped;

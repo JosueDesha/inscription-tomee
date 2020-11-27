@@ -1,4 +1,4 @@
-package toto;
+package josue;
 public class Promotion {
 
     public int annee;

@@ -1,4 +1,4 @@
-package toto;
+package josue;
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.RequestScoped;
 import javax.faces.annotation.ManagedProperty;

@@ -1,4 +1,5 @@
-package toto;
+package josue;
+/**Classe formation permettant de stocker toutes les formations  dans une arraylist */
 public class Formation {
     
     public int id;

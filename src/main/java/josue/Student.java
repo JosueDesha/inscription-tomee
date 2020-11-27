@@ -1,4 +1,4 @@
-package toto;
+package josue;
 
 import javax.faces.annotation.ManagedProperty;
 import javax.inject.Inject;
@@ -11,23 +11,23 @@ public class Student {
     @ManagedProperty(value = "#{manager}")
     @Inject
 
-    /** represente l'identifiant d'un etudiant */
+    /** identifiant d'un etudiant */
     public int id;
 
-    /** represente le nom dun etudiant */
+    /** le nom dun etudiant */
     public String lastName;
 
-    /** represente le prenom dun etudiant */
+    /**  le prenom dun etudiant */
     public String firstName;
 
-    /** represente la date de naissance d'un etudiant */
+    /**  la date de naissance d'un etudiant */
     public String birthDate;
 
-    /** represente le numero de telephone dun etudiant */
+    /**  le numero de telephone dun etudiant */
     public String phoneNumber;
 
     /**
-     * accesseur permettant la recuperation de l'id de l'etudiant
+     * accesseur  de la propriete id 
      * 
      * @return
      */
@@ -130,10 +130,15 @@ public class Student {
      * constucteur de la classe student permettant de d'initialiser les attributs de
      * la classe student
      * 
+     * identifiant d'un etudiant
      * @param id
+     * nom d'un etudiant
      * @param lastName
+     * prenom d'un etudiant
      * @param firstName
+     * date de naissance  d'un etudiant
      * @param birthDate
+     * telephone  d'un etudiant
      * @param phoneNumber
      */
     public Student(int id, String lastName, String firstName, String birthDate, String phoneNumber) {
