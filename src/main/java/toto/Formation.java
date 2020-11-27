@@ -1,3 +1,4 @@
+package toto;
 public class Formation {
     
     public int id;
